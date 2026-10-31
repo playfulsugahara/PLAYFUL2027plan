@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>2027年作戦会議</title>
+<meta name="description" content="次の波がくる前に、これからの話をしよう。PLAYFUL習慣コミュニティの特別企画。2026.11.15〜2027.1.13、Zoom全5回＋Band。">
+<meta property="og:title" content="2027年作戦会議｜PLAYFUL">
+<meta property="og:description" content="次の波がくる前に、これからの話をしよう。2026.11.15〜2027.1.13 Zoom全5回＋Band。">
+<meta property="og:image" content="https://playfulsugahara.github.io/PLAYFUL2027plan/kv.jpg">
+<!-- Adobe Fonts（見出し：小塚ゴシック Pr6N B／本文：源ノ角ゴシック Regular）Webプロジェクト kit: rdj4zms。本番（GitHub Pages）でのみ読み込まれる。確認用プレビューでは外部読込が制限されるため代替フォントで表示 -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'rdj4zms',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Caveat:wght@500;700&family=Courier+Prime:wght@700&display=swap">
+<style>
+/* Layout: キービジュアルのポスターをそのまま地にした縦長1カラム。ライム地＋チャコールのアーチ、青と朱のずらし影 */
+:root{
+  --lime:#e1e984;      /* KVの地 */
+  --paper:#f2f2ea;     /* 明るい紙 */
+  --frame:#e7e8e0;     /* KVの外枠の色（FVの地） */
+  --ink:#323232;       /* アーチ */
+  --blue:#4267c0;
+  --red:#ff6a45;
+  --green:#53a068;
+  --mustard:#f19a26;
+  --shadow:#d9dacd;
+  --muted:#5d5f55;
+  --f-display:"kozuka-gothic-pr6n","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; /* 小塚ゴシック B（Adobe Fonts・下のkit）。読み込めない環境ではZen Kaku Gothic New Bold */
+  --w-display:700;
+  /* 本文（源ノ角ゴシック）の太さは3段階に絞る */
+  --w-body:400;   /* Regular：本文 */
+  --w-mid:500;    /* Medium：声・タグ・問い・FAQ・表の見出し */
+  --w-strong:700; /* Bold：本文中の強調・ラベル */
+  --f-body:"source-han-sans-japanese","Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --f-script:"Caveat","Segoe Print",cursive;
+  --f-mono:"Courier Prime","Courier New",monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-weight:var(--w-body);font-size:16px;line-height:1.95;letter-spacing:.02em;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+.wrap{max-width:640px;margin:0 auto;padding-inline:20px}
+section{padding-block:72px}
+h2,h3{font-family:var(--f-display);font-weight:var(--w-display);text-wrap:balance;line-height:1.45;margin:0}
+h2{font-size:clamp(24px,6.4vw,32px);letter-spacing:.04em}
+p{margin:0}
+.stack{display:flex;flex-direction:column;gap:1.25em}
+strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,rgba(255,106,69,.28) 62%)}
+
+/* 英字の走り書き（KVの背景モチーフ） */
+.script{font-family:var(--f-script);color:var(--green);font-size:22px;line-height:1;display:block;margin-bottom:10px;transform:rotate(-4deg);transform-origin:left}
+
+/* ずらし影の見出し（ロゴの影と同じ） */
+.shadowed{color:var(--red);text-shadow:3px 3px 0 var(--shadow)}
+.shadowed.b{color:var(--blue)}
+
+/* 仮・未定のしるし */
+.tbd{display:inline-block;font-family:var(--f-body);font-size:12px;font-weight:var(--w-strong);line-height:1.5;letter-spacing:.06em;color:var(--red);border:1.5px dashed var(--red);border-radius:4px;padding:1px 7px;margin-left:6px;vertical-align:middle;background:var(--paper);text-shadow:none}
+
+/* ===== FV ===== */
+.fv{background:var(--frame);padding-block:0 56px;position:relative;overflow:hidden}
+.fv .kv{max-width:640px;margin:0 auto}
+.fv .kv img{width:100%;height:auto}
+.fv .lead{text-align:center;margin-top:36px}
+.fv .lead .catch{font-family:var(--f-display);font-weight:var(--w-display);font-size:clamp(22px,6vw,30px);line-height:1.5;color:var(--ink)}
+.fv .lead .sub{margin-top:28px;font-weight:var(--w-mid);color:var(--ink)}
+.voices-fv{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px}
+.voices-fv li{background:var(--lime);border-radius:999px;padding:12px 22px;font-weight:var(--w-mid);font-size:15px;line-height:1.6;position:relative;box-shadow:3px 3px 0 var(--ink)}
+.fv .meta-line{background:var(--lime)}
+.voices-fv li:nth-child(odd){margin-right:28px}
+.voices-fv li:nth-child(even){margin-left:28px}
+.cta-area{margin-top:36px;display:flex;flex-direction:column;align-items:center;gap:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-display);font-weight:var(--w-display);font-size:19px;letter-spacing:.08em;text-decoration:none;color:var(--paper);background:var(--red);padding:16px 44px;border-radius:999px;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s;border:0;cursor:pointer}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.btn.blue{background:var(--blue)}
+.btn .arr{font-family:var(--f-body);font-size:16px}
+.meta-line{font-family:var(--f-mono);font-size:14px;letter-spacing:.04em;text-align:center;background:var(--paper);padding:6px 16px;border-radius:2px}
+
+/* ===== WELCOME ===== */
+.welcome{background:var(--paper);text-align:center}
+.welcome .big{font-family:var(--f-script);font-weight:700;font-size:clamp(40px,11vw,60px);color:var(--blue);line-height:1.05;display:flex;flex-direction:column;align-items:center;--swing:.55em;--shift:-.4em;margin:0 0 20px;transform:translateX(var(--shift)) rotate(-3deg)} /* --shift：2段目が長く右に重く見えるため、全体を左へ寄せて中央に見せる */
+.welcome .big span:first-child{transform:translateX(calc(var(--swing) * -1))}
+.welcome .big span:last-child{transform:translateX(var(--swing))} /* 1段目は左、2段目は右に振る。振り幅は --swing（10/31 約3文字分詰めた） */
+.welcome .stack{margin-top:32px}
+.welcome .fact{font-family:var(--f-display);font-weight:var(--w-display);font-size:20px;line-height:1.7;color:var(--ink);padding:22px 12px;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+
+/* ===== 起きたこと ===== */
+.happened{background:var(--ink);color:var(--paper)}
+.happened h2{color:var(--paper)}
+.happened .script{color:var(--lime)}
+.chips{list-style:none;padding:0;margin:32px 0 0;display:flex;flex-direction:column;align-items:flex-start;gap:10px} /* 1項目1行（短い項目が横に並ばないように） */
+.chips li{background:var(--paper);color:var(--ink);border-radius:6px;padding:8px 14px;font-weight:var(--w-mid);font-size:15px;line-height:1.5}
+.chips li:nth-child(3n+1){background:var(--lime)}
+.chips li:nth-child(3n+2){background:var(--paper)}
+.chips li:nth-child(3n){background:var(--mustard)}
+.happened .note{margin-top:24px;font-size:14px;color:var(--shadow)}
+.happened .note a{color:var(--lime)}
+
+/* ===== それでも ===== */
+.still{background:var(--paper)}
+.still .stack{margin-top:28px}
+.still .turn{font-family:var(--f-display);font-weight:var(--w-display);font-size:20px;line-height:1.7;color:var(--blue)}
+.still .name{font-family:var(--f-display);font-weight:var(--w-display);font-size:22px;color:var(--red)}
+
+/* ===== YES診断 ===== */
+.yes{background:var(--lime)}
+.qs{margin-top:32px;display:grid;gap:16px}
+.q{background:var(--paper);border-radius:14px;padding:22px 22px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:start}
+.q .q-em{font-weight:var(--w-strong);font-size:1.15em;color:var(--ink)}
+.q .qn{font-family:var(--f-display);font-weight:var(--w-display);font-size:26px;line-height:1.2;color:var(--blue)}
+.q p{font-weight:var(--w-mid);min-width:0}
+.q .yesbtn{grid-column:2;justify-self:end;margin-top:8px;font-family:var(--f-display);font-weight:var(--w-display);font-size:16px;letter-spacing:.1em;background:transparent;color:var(--red);border:2px solid var(--red);border-radius:999px;padding:4px 22px;cursor:pointer;transition:background .15s,color .15s}
+.q .yesbtn:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.q .yesbtn[aria-pressed="true"]{background:var(--red);color:var(--paper)}
+.yes-result{margin-top:28px;text-align:center;font-family:var(--f-display);font-weight:var(--w-display);font-size:20px;line-height:1.7;transition:transform .3s}
+.yes-result.lit{transform:scale(1.04);color:var(--red)}
+
+/* ===== やること ===== */
+.do{background:var(--paper)}
+.cards{margin-top:36px;display:grid;gap:18px}
+.card{background:#fff;border:2px solid var(--ink);border-radius:14px;padding:24px 22px;position:relative}
+.card .num{font-family:var(--f-mono);font-size:14px;letter-spacing:.1em;color:var(--muted)}
+.card h3{font-size:19px;margin:4px 0 12px;color:var(--ink)}
+.card.feature{background:var(--blue);border-color:var(--blue);color:var(--paper)}
+.card.feature h3{color:var(--paper)}
+.card.feature .num{color:var(--lime)}
+.card.feature .flag{position:absolute;top:-14px;right:18px;background:var(--red);color:var(--paper);font-family:var(--f-display);font-weight:var(--w-display);font-size:14px;padding:3px 14px;border-radius:999px;letter-spacing:.08em}
+.card p{font-size:15px;line-height:1.9}
+
+/* ===== 手元にあるもの ===== */
+.take{background:var(--ink);color:var(--paper)}
+.take h2{color:var(--paper)}
+.take .script{color:var(--lime)}
+.take ol{list-style:none;padding:0;margin:32px 0;display:grid;gap:12px;counter-reset:t}
+.take li{counter-increment:t;display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;background:rgba(255,255,255,.06);border-radius:10px;padding:16px 18px;font-weight:var(--w-mid)}
+.take li::before{content:counter(t);font-family:var(--f-display);font-weight:var(--w-display);font-size:22px;color:var(--lime)}
+.take strong{background:none;color:var(--lime)}
+.take .stack p{color:var(--paper)}
+
+/* ===== 声 ===== */
+.voice{background:var(--lime)}
+.voice-list{margin-top:32px;display:grid;gap:20px}
+.v{display:grid;gap:6px;margin:0}
+.v figcaption{font-size:13px;color:var(--muted);text-align:right;padding-right:6px}
+.v blockquote{margin:0;background:var(--paper);border-radius:4px 18px 18px 18px;padding:16px 20px;font-size:15px;line-height:1.85;box-shadow:3px 3px 0 var(--shadow)}
+.v blockquote p+p{margin-top:6px}
+.voice .close{margin-top:48px;text-align:center;padding:28px 8px;border-top:2px dashed var(--ink)}
+.voice .close .head{font-family:var(--f-display);font-weight:var(--w-display);font-size:19px;line-height:1.7;margin-bottom:16px}
+
+/* ===== 正直に言うと ===== */
+.honest{background:var(--paper)}
+.honest .stack{margin-top:28px}
+
+/* ===== 2人の作戦 ===== */
+.plans{background:var(--paper);padding-top:0}
+.duo{--overlap:44px;margin-top:32px;margin-bottom:calc(var(--overlap) * -1);position:relative;z-index:1;pointer-events:none}
+.duo img{width:100%;height:auto}
+.plan-grid{margin-top:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.plan{border-radius:14px;padding:calc(22px + 44px) 22px 22px;color:var(--paper);min-width:0} /* 上はイラストの食い込み分（.duo --overlap）を足す */
+@media (max-width:535px){.plan.kei{padding-top:22px}} /* 縦積み時、2枚目にはイラストが乗らない */
+.plan.sho{background:var(--blue)}
+.plan.kei{background:var(--green)}
+.plan .label{font-family:var(--f-display);font-weight:var(--w-display);font-size:28px;letter-spacing:.12em;line-height:1.2}
+.plan .kw{font-family:var(--f-display);font-weight:var(--w-display);font-size:18px;margin:10px 0;color:var(--lime);line-height:1.6}
+.plan .body{font-size:15px;line-height:1.9}
+.plan .tbd{background:transparent;color:var(--paper);border-color:var(--paper)}
+.plans .ask{margin-top:36px;text-align:center;font-family:var(--f-display);font-weight:var(--w-display);font-size:22px}
+
+/* ===== 料金・日程 ===== */
+.info{background:var(--lime)}
+.info h2{margin-bottom:24px}
+.tbl-wrap{overflow-x:auto;background:var(--paper);border-radius:12px;border:2px solid var(--ink)}
+table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+th,td{font-weight:var(--w-body);padding:12px 14px;text-align:left;border-bottom:1px solid var(--shadow);vertical-align:top;line-height:1.6}
+tr:last-child th,tr:last-child td{border-bottom:0}
+thead th{font-size:13px;color:var(--muted);font-weight:var(--w-mid);background:rgba(0,0,0,.03)}
+td.yen{text-align:right;white-space:nowrap;font-family:var(--f-mono);font-weight:700} /* Courier Primeは700のみ読込 */
+tbody th{font-weight:var(--w-mid)}
+tr.hl th{color:var(--red)}
+tr.hl td.yen.total{color:var(--red)}
+.notes{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:6px;font-size:14px}
+.notes li{padding-left:1.2em;text-indent:-1.2em}
+.notes li::before{content:"・"}
+.block+.block{margin-top:56px}
+.sched td:first-child{white-space:nowrap;font-family:var(--f-display);font-weight:var(--w-display);color:var(--blue)}
+.sched td.date{font-weight:var(--w-mid);white-space:nowrap}
+.sched td.time{font-family:var(--f-mono);white-space:nowrap}
+.kick td{color:var(--red)}
+.dl{margin-top:16px;display:grid;grid-template-columns:auto 1fr;gap:6px 18px;font-size:15px}
+.dl dt{font-weight:var(--w-mid)}
+.dl dd{margin:0;min-width:0}
+
+/* ===== 申込の流れ ===== */
+.flow{background:var(--paper)}
+.steps{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:0}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;padding-bottom:22px;position:relative}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:21px;top:44px;bottom:4px;border-left:2px dotted var(--ink)}
+.steps .n{width:44px;height:44px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-family:var(--f-display);font-weight:var(--w-display);font-size:18px}
+.steps p{padding-top:8px;min-width:0}
+.forms{margin-top:28px;display:grid;gap:14px;justify-items:center}
+
+/* ===== FAQ ===== */
+.faq{background:var(--paper);padding-top:24px}
+.faq-list{margin-top:28px;display:grid;gap:10px}
+details{background:#fff;border:2px solid var(--ink);border-radius:12px}
+summary{cursor:pointer;list-style:none;padding:16px 46px 16px 18px;font-weight:var(--w-mid);position:relative;line-height:1.7}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q.";font-family:var(--f-display);font-weight:var(--w-display);color:var(--blue);margin-right:8px}
+summary::after{content:"+";position:absolute;right:18px;top:12px;font-family:var(--f-display);font-weight:var(--w-display);font-size:22px;color:var(--red);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:10px}
+details .a{padding:0 18px 18px;font-size:15px}
+details .a::before{content:"A. ";font-family:var(--f-display);font-weight:var(--w-display);color:var(--red)}
+
+/* ===== 私たちについて ===== */
+.about{background:var(--ink);color:var(--paper)}
+.about h2{color:var(--paper)}
+.profile{margin-top:32px;text-align:center}
+.profile .brand-logo{width:min(200px,55%);margin:16px auto 0} /* 理念の上。ライムに塗り直した版 */
+.profile .role{font-size:14px;letter-spacing:.12em;color:var(--lime);font-weight:var(--w-mid)}
+.profile .name{font-family:var(--f-display);font-weight:var(--w-display);font-size:clamp(30px,8vw,40px);letter-spacing:.06em;line-height:1.3;margin-top:6px}
+.profile .kana{font-size:13px;letter-spacing:.12em;color:var(--shadow);margin-top:4px}
+.profile .stack{margin-top:28px}
+.profile .motto{font-family:var(--f-display);font-weight:var(--w-display);font-size:20px;color:var(--lime)}
+
+/* ===== 最後のお申し込み ===== */
+.final{background:var(--lime);text-align:center;padding-bottom:96px}
+.final .logo{max-width:440px;margin:0 auto} /* 透過PNGをライム地に直接のせる */
+.final h2{margin-top:36px;font-size:clamp(22px,5.6vw,28px)}
+.final .forms{margin-top:28px}
+
+footer{background:var(--ink);color:var(--shadow);text-align:center;font-size:12px;padding-block:28px;letter-spacing:.1em}
+footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:var(--paper);font-size:16px;letter-spacing:.2em;display:block;margin-bottom:4px}
+
+/* ===== 下部固定ボタン（スマホ） ===== */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(50,50,50,.94);display:flex;justify-content:center;transform:translateY(110%);transition:transform .25s;z-index:10}
+.sticky-cta.show{transform:none}
+.sticky-cta .btn{font-size:16px;padding:12px 32px;box-shadow:none;width:100%;max-width:420px}
+@media (min-width:760px){
+  section{padding-block:96px}
+  .voices-fv li{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+
+<!-- 0. ファーストビュー -->
+<header class="fv" id="top">
+  <div class="kv"><img src="kv.jpg" alt="特別企画！2027 作戦会議。次の波がくる前に、これからの話をしよう。2026.11.15〜2027.1.13" width="1080" height="1350"></div>
+  <div class="wrap">
+    <div class="lead">
+      <p class="catch">２０２７年は<br>自分の波乗りを楽しもう</p>
+      <p class="sub">この半年、習慣コミュニティで起きたこと。</p>
+    </div>
+    <ul class="voices-fv">
+      <li>「コミュニティが始まって５ヶ月。多分、数百万単位で変わってる」</li>
+      <li>「『なくなっちゃう』と思って払ってたのが、『払えた』になった」</li>
+      <li>「何もしなかった夫が、洗濯物まで畳んでる。奇跡」</li>
+      <li>夫の方から、「２０２７年の家族旅行」を提案された</li>
+    </ul>
+    <div class="cta-area">
+      <a class="btn" href="#apply">参加する <span class="arr">→</span></a>
+      <p class="meta-line">11/15(日) KICK OFF ｜ Zoom全5回 ｜ Band ｜ 定員20名</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- 1. WELCOME -->
+<section class="welcome">
+  <div class="wrap">
+    <p class="big" lang="en"><span>Welcome to the</span><span>Habit Community!</span></p>
+    <h2>習慣コミュニティ、<br>第３回目は特別企画です</h2>
+    <div class="stack">
+      <p>５・６月の習慣化コミュニティ。<br>８月からの、お金のうつわを育てる習慣コミュニティ。</p>
+      <p>２回にわたって、みんなで取り組んできました。</p>
+      <p>その中で、はっきり分かったことがあります。</p>
+      <p class="fact">意識と、１日の行動を変えれば、<br>変化は確実に起こせる。</p>
+      <p>これは気合いや根性の話ではなく、<br>メンバーのみなさんに実際に起きた、事実の話です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. この半年で、起きたこと -->
+<section class="happened">
+  <div class="wrap">
+    <span class="script">What happened in 6 months</span>
+    <h2>この半年で、起きたこと</h2>
+    <ul class="chips">
+      <li>この先の自分が、イメージできるようになった</li>
+      <li>自分を取り戻せる「ホーム」ができた</li>
+      <li>余白ができて、物事がいい方向に進み出した</li>
+      <li>自分を責めなくなった</li>
+      <li>人の工夫や気づきが、自分のヒントになった</li>
+      <li>頑張らなくても、続けられるようになった</li>
+      <li>安心していられる場所と、仲間ができた</li>
+      <li>売上や数字に、気持ちが振り回されなくなった</li>
+    </ul>
+    <p class="note">詳しくは、<a href="#voice">メンバーの声</a>で。</p>
+  </div>
+</section>
+
+<!-- 3. それでも、もうひとつ分かったこと -->
+<section class="still">
+  <div class="wrap">
+    <h2 class="shadowed b">それでも、<br>もうひとつ分かったこと</h2>
+    <div class="stack">
+      <p>変化は、起こせる。</p>
+      <p>でも、<strong>その変化がどこに向かっているか</strong>で、<br>習慣が、毎日の行動選択の質が、まったく変わってくる。</p>
+      <p>自分が向かいたい方向に、ちゃんと進んでいるか。<br>その観点があると、<br>毎日の行動が「変化を生み出すもの」になっていく。</p>
+      <p>逆に、方向が決まらないまま走り続けると、<br>がんばっているのに、なぜか消耗していく。</p>
+      <p class="turn">だから、年が切り替わるこのタイミングで、一度作戦会議をします。</p>
+      <p>自分自身と対話しながら、<br>２０２７年を、どう過ごすか。<br>何に力を入れて、何を手放すか。</p>
+      <p>それを決める２ヶ月が、<br><span class="name">「２０２７年作戦会議」</span>です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. こんな方へ -->
+<section class="yes">
+  <div class="wrap">
+    <span class="script">Is this for you?</span>
+    <h2>こんな方へ</h2>
+    <div class="qs">
+      <div class="q"><span class="qn">Q1</span><p>２０２６年、けっこう<b class="q-em">がんばった</b>。<br>でも<b class="q-em">「何に向かってたんだっけ？」</b>と、ふと思うことがある。</p><button class="yesbtn" type="button" id="yes1" aria-pressed="false">YES</button></div>
+      <div class="q"><span class="qn">Q2</span><p>来年こそ、と思って<b class="q-em">立てた目標</b>が、<br>春には<b class="q-em">消えていた</b>年がある。</p><button class="yesbtn" type="button" id="yes2" aria-pressed="false">YES</button></div>
+      <div class="q"><span class="qn">Q3</span><p>がむしゃらに<b class="q-em">走り続ける</b>より、<br><b class="q-em">自分の波乗り</b>を、楽しめるようになりたい。</p><button class="yesbtn" type="button" id="yes3" aria-pressed="false">YES</button></div>
+    </div>
+    <p class="yes-result" id="yesResult">YESが３つ続いたあなたへ。<br>２０２７年の作戦、一緒に立てませんか。</p>
+  </div>
+</section>
+
+<!-- 5. やること -->
+<section class="do">
+  <div class="wrap">
+    <h2 class="shadowed">やること</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="num">01</span>
+        <h3>週に１回、問いが届く</h3>
+        <p>運営から、毎週ひとつ問いを投げます。<br>PLAYFULノートをもとにした、自分と対話するための問いです。<br>一問一答で答えられる形にしているので、忙しい週も大丈夫。</p>
+      </article>
+      <article class="card">
+        <span class="num">02</span>
+        <h3>２週間に１回、Zoomで集まる（全５回）</h3>
+        <p>夜２１時から２３時まで。<br>最初の１５〜３０分は、習慣・お金・人間関係など人生の波乗りを楽しむコツを詰め込んだ講義（アーカイブあり）。<br>その後、参加メンバーでのシェアタイム・個別相談・質問で、さらに自分仕様の作戦精度を高めていきます。</p>
+      </article>
+      <article class="card feature">
+        <span class="flag">目玉</span>
+        <span class="num">03</span>
+        <h3>自分の価値観と方向性を見つける</h3>
+        <p>自分のホロスコープをもとに、あなたが本当に大事にしているものと、目指す方向を言葉にするワークを実施。</p>
+      </article>
+      <article class="card">
+        <span class="num">04</span>
+        <h3>自分の「波」の仮説をつくる</h3>
+        <p>やる気が出るとき、止まるとき。<br>そのとき、どんなブロックが出ているか。<br>自分の出来事から、自分だけのパターンを見つけます。<br>これが、２０２７年の「迷ったときの判断基準」になります。</p>
+      </article>
+      <article class="card">
+        <span class="num">05</span>
+        <h3>Bandで、みんなとシェア</h3>
+        <p>１期に続いて、Bandでつながります。<br>見ているだけでも効果絶大。<br>１人で起きた小さな波が、グループ全体に派生して大きな渦に変わる瞬間をぜひ体感してください。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 終わるときに、手元にあるもの -->
+<section class="take">
+  <div class="wrap">
+    <span class="script">What you'll take home</span>
+    <h2>終わるときに、<br>手元にあるもの</h2>
+    <ol>
+      <li><span>２０２７年に向けた、<strong>自分のコンセプトと価値観</strong>の言葉</span></li>
+      <li><span><strong>自分の波についての仮説</strong></span></li>
+      <li><span>それをもとにした、<strong>自分の行動指針</strong>（やる／やらないを決める基準）</span></li>
+    </ol>
+    <div class="stack">
+      <p>そしてこれは、そのまま２０２７年につながります。</p>
+      <p>２０２７年からの習慣コミュニティでは、<br><strong>この行動指針をもとに、「自分の波乗り」を楽しむ</strong>ことに取り組む予定です。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. 前の期のメンバーの声 -->
+<section class="voice" id="voice">
+  <div class="wrap">
+    <span class="script">Voices</span>
+    <h2>メンバーの声</h2>
+    <div class="voice-list">
+      <figure class="v"><blockquote><p>「この先どうなるか分からない不安がとても大きくて（…）本当に最近やっと…私はこの仕事でずっと過ごすイメージが湧いてきた」</p></blockquote><figcaption>１期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「自分を取り戻していけるホームだなと感じてます」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「正直、習慣化でここまで余白が出来て（…）物事がいい方向に進んで行くとは思ってなくて！ 今、ただただビックリしてます」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「変わってきた実感があります。自分を責めなくなった！！」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「このコミュニティがあって他の方の気付きや習慣化する工夫などを目にすることができることがありがたいです」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「頑張らなくていい！ 一回でもできたらオッケーで続けられてます！」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「『生きているだけで１００点満点』という安心基地をこの場所で仲間と共有できたことが、何より幸せ」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>いつも月末になると売上を見て落ち込んでいたのが、暇そうだなと思っててもポンって予約が入る。気づけば先月は凹んでいなかった</p></blockquote><figcaption>１期メンバー</figcaption></figure>
+    </div>
+    <div class="close">
+      <p class="head">小さい変化に気付けない人は、<br>大きい変化の波に上手に乗れません。</p>
+      <p>数百万円の変化も、<br>人生でやりたいことも、<br>今日選んだ小さな行動の変化から始まっています。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8. 正直に言うと -->
+<section class="honest">
+  <div class="wrap">
+    <h2 class="shadowed b">正直に言うと<span class="tbd">案</span></h2>
+    <div class="stack">
+      <p>自分と向き合う問いに答えるだけなら、<br>正直、ひとりでもできます。</p>
+      <p>でも、この半年で僕たちが見てきたのは、<br>「やりたいのにできない。壁にぶつかる理由が自分では分からない」という声でした。</p>
+      <p>自分に起きていることは、なかなか見えない。<br>人のことは分かるのに、自分のことになると分からない。</p>
+      <p>人は、誰かに話して初めて<br>「本当の自分」が見えてくるものです。<br>もちろん、僕たちも参加者として、２０２７年の作戦を立てます。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 8-2. 僕たちの、2027年の作戦 -->
+<section class="plans">
+  <div class="wrap">
+    <h2 class="shadowed">僕たちの、２０２７年の作戦</h2>
+    <div class="duo"><img src="duo.png" alt="作戦を考える祥と慧のイラスト" width="890" height="533" loading="lazy"></div>
+    <div class="plan-grid">
+      <div class="plan sho"><p class="label" lang="en">SHO</p><p class="kw">伝える、話す、外に出す</p><p class="body">頭の中にあるものを、出し惜しみせず外へ。<br>２０２７年は「出す人」になります。<br>わくわくお兄さん、本格始動です。</p></div>
+      <div class="plan kei"><p class="label" lang="en">KEI</p><p class="kw">捉える、形にする、表現する</p><p class="body">ひらめきをかたちにする。<br>小さく作って、どんどん出す。<br>２０２７年は「表現する人」として過ごします。</p></div>
+    </div>
+    <p class="ask">さあ、あなたの<br>２０２７年の作戦は？</p>
+    <div class="cta-area"><a class="btn" href="#flow">この２人と、作戦会議をする <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<!-- 9・10. 料金・日程 -->
+<section class="info">
+  <div class="wrap">
+    <div class="block">
+      <span class="script">Price</span>
+      <h2>料金</h2>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th></th><th>参加料<br>（約２ヶ月）</th><th>入会金</th><th>お支払い</th></tr></thead>
+          <tbody>
+            <tr class="hl"><th>０期・１期メンバー<br>（５月〜１０月）</th><td class="yen">¥8,800</td><td class="yen">なし</td><td class="yen total">¥8,800</td></tr>
+            <tr><th>はじめての方</th><td class="yen">¥8,800</td><td class="yen">¥11,000</td><td class="yen total">¥19,800</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul class="notes">
+        <li>お支払いは<b>銀行振込</b>です（振込先はお申し込み後にご案内します）<span class="tbd">案内のしかた 要確認</span></li>
+        <li>入会金は、<b>PLAYFULの習慣コミュニティ</b>に最初に入るときに一度だけいただくものです</li>
+        <li>定員：<b>２０名</b></li>
+        <li><span class="tbd" style="margin-left:0">税込の表記 要確認</span></li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <span class="script">Schedule</span>
+      <h2>日程</h2>
+      <p style="margin-bottom:16px">Zoomは全５回。時間はすべて <b>２１：００〜２３：００</b> です。</p>
+      <div class="tbl-wrap">
+        <table class="sched">
+          <thead><tr><th>回</th><th>日付</th><th>時間</th></tr></thead>
+          <tbody>
+            <tr class="kick"><td>１</td><td class="date">１１月１５日（日）キックオフ</td><td class="time">21:00–23:00</td></tr>
+            <tr><td>２</td><td class="date">１１月２９日（日）</td><td class="time">21:00–23:00</td></tr>
+            <tr><td>３</td><td class="date">１２月１３日（日）</td><td class="time">21:00–23:00</td></tr>
+            <tr><td>４</td><td class="date">１２月２８日（月）</td><td class="time">21:00–23:00</td></tr>
+            <tr><td>５</td><td class="date">２０２７年１月１３日（水）</td><td class="time">21:00–23:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <dl class="dl">
+        <dt>期間</dt><dd>２０２６年１１月１５日 〜 ２０２７年１月１３日</dd>
+        <dt>お申し込み締切</dt><dd><span class="tbd" style="margin-left:0">未定</span></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- 11. お申し込みの流れ -->
+<section class="flow" id="flow">
+  <div class="wrap">
+    <h2 class="shadowed b">お申し込みの流れ</h2>
+    <ol class="steps">
+      <li><span class="n">1</span><p>下のボタンから、<b>Googleフォーム</b>でお申し込み</p></li>
+      <li><span class="n">2</span><p>振込先のご案内が届きます → 参加料をお振込み</p></li>
+      <li><span class="n">3</span><p><b>Band</b>にご招待します</p></li>
+      <li><span class="n">4</span><p>１１月１５日（日）２１：００、Zoomでキックオフ</p></li>
+    </ol>
+    <div class="forms">
+      <a class="btn" href="#">メンバーの方はこちら <span class="arr">→</span></a>
+      <a class="btn blue" href="#">はじめての方はこちら <span class="arr">→</span></a>
+      <span class="tbd">フォームURL 未定</span>
+    </div>
+  </div>
+</section>
+
+<!-- 12. よくあるご質問 -->
+<section class="faq">
+  <div class="wrap">
+    <h2 class="shadowed">よくあるご質問</h2>
+    <div class="faq-list">
+      <details><summary>習慣コミュニティに参加したことがなくても大丈夫ですか？</summary><p class="a">大丈夫です。今回は初めての方も安心して取り組んでいただける内容になっています。</p></details>
+      <details><summary>毎週の問いに、全部答えられる自信がありません。</summary><p class="a">一問一答で答えられる形にしています。答えられない週があっても、問題ありません。</p></details>
+      <details><summary>Zoomに参加できない回があります。</summary><p class="a">Zoomの講義部分はアーカイブが残るので、期間内はいつでも、何回でも視聴できます。<br>講義終了後の質問・交流会は、内容によってアーカイブ提供or記事化するかも。</p></details>
+      <details><summary>Bandへの書き込みは必須ですか？</summary><p class="a">いいえ。見ているだけでも、リアクションだけでも大丈夫です。<br>ただし、傾向として積極参加している人の方が変化が圧倒的に早いので飛び込んでみてね。</p></details>
+      <details><summary>前期でやっていたワークは、続けたほうがいいですか？</summary><p class="a">任意ですが、続けることをおすすめします。「今後もお金に向き合い続ける！」という方には、引き続きサポートします。もちろん今回から始める方にも。</p></details>
+      <details><summary>２０２７年からの習慣コミュニティにも参加する必要がありますか？</summary><p class="a">任意です。２０２７年に参加する人は、今回の内容はかなり助けになると思います。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13. 私たちについて -->
+<section class="about">
+  <div class="wrap">
+    <span class="script" style="color:var(--lime)">About us</span>
+    <h2>私たちについて</h2>
+    <div class="profile">
+      <p class="role">主宰 / 伴走</p>
+      <p class="name">菅原　祥・慧</p>
+      <p class="kana">すがはら しょう・けい</p>
+      <div class="stack">
+        <img class="brand-logo" src="playful-logo.png" alt="PLAYFUL" width="946" height="158" loading="lazy">
+        <p class="motto">「自分を最大限生きる人を増やす」</p>
+        <p>という理念のもと、<br>自分たちも体現するために<br>日々研究と実践を重ねる夫婦。</p>
+        <p>これを叶える最も効果的な手段として、<br>「習慣」の見直しを推奨している。</p>
+        <p>気さくなキャラクターと、<br>その人がつまずいているポイントを見抜き、<br>根本から変化を起こすアドバイスに定評がある。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. お申し込み -->
+<section class="final" id="apply">
+  <div class="wrap">
+    <div class="logo"><img src="title.png" alt="2027 作戦会議" width="883" height="415"></div>
+    <h2>２０２７年の作戦、<br>一緒に立てましょう。<span class="tbd">仮</span></h2>
+    <div class="forms">
+      <a class="btn" href="#">メンバーの方はこちら <span class="arr">→</span></a>
+      <a class="btn blue" href="#">はじめての方はこちら <span class="arr">→</span></a>
+    </div>
+    <p class="meta-line" style="margin:24px auto 0;display:inline-block">11/15(日) 21:00 KICK OFF ｜ 定員20名</p>
+  </div>
+</section>
+</main>
+
+<footer><span class="brand">PLAYFUL</span>Habit Community Special Project</footer>
+
+<div class="sticky-cta" id="sticky"><a class="btn" href="#apply">参加する <span class="arr">→</span></a></div>
+
+<script>
+(function(){
+  var btns=[].slice.call(document.querySelectorAll('.yesbtn'));
+  var result=document.getElementById('yesResult');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+      var all=btns.every(function(x){return x.getAttribute('aria-pressed')==='true'});
+      result.classList.toggle('lit',all);
+    });
+  });
+  var sticky=document.getElementById('sticky');
+  var fv=document.querySelector('.fv');
+  var apply=document.getElementById('apply');
+  function onScroll(){
+    var past=fv.getBoundingClientRect().bottom<0;
+    var r=apply.getBoundingClientRect();
+    var atEnd=r.top<window.innerHeight&&r.bottom>0;
+    sticky.classList.toggle('show',past&&!atEnd);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
