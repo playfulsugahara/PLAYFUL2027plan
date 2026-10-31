@@ -168,11 +168,10 @@ strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,
 
 /* ===== 2人の作戦 ===== */
 .plans{background:var(--paper);padding-top:0}
-.duo{--overlap:44px;margin-top:32px;margin-bottom:calc(var(--overlap) * -1);position:relative;z-index:1;pointer-events:none}
-.duo img{width:100%;height:auto}
-.plan-grid{margin-top:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-.plan{border-radius:14px;padding:calc(22px + 44px) 22px 22px;color:var(--paper);min-width:0} /* 上はイラストの食い込み分（.duo --overlap）を足す */
-@media (max-width:535px){.plan.kei{padding-top:22px}} /* 縦積み時、2枚目にはイラストが乗らない */
+.plan-item{display:flex;flex-direction:column;min-width:0}
+.plan-item .who{align-self:center;max-width:100%;margin-bottom:-44px;position:relative;z-index:1;pointer-events:none} /* カードに44px食い込ませる */
+.plan-grid{margin-top:32px;align-items:end;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.plan{border-radius:14px;padding:calc(22px + 44px) 22px 22px;color:var(--paper);min-width:0} /* 上はイラストの食い込み分（.plan-item .who の -44px）を足す */
 .plan.sho{background:var(--blue)}
 .plan.kei{background:var(--green)}
 .plan .label{font-family:var(--f-display);font-weight:var(--w-display);font-size:28px;letter-spacing:.12em;line-height:1.2}
@@ -437,10 +436,11 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
 <section class="plans">
   <div class="wrap">
     <h2 class="shadowed">僕たちの、２０２７年の作戦</h2>
-    <div class="duo"><img src="duo.png" alt="作戦を考える祥と慧のイラスト" width="890" height="533" loading="lazy"></div>
     <div class="plan-grid">
-      <div class="plan sho"><p class="label" lang="en">SHO</p><p class="kw">伝える、話す、外に出す</p><p class="body">頭の中にあるものを、出し惜しみせず外へ。<br>２０２７年は「出す人」になります。<br>わくわくお兄さん、本格始動です。</p></div>
-      <div class="plan kei"><p class="label" lang="en">KEI</p><p class="kw">捉える、形にする、表現する</p><p class="body">ひらめきをかたちにする。<br>小さく作って、どんどん出す。<br>２０２７年は「表現する人」として過ごします。</p></div>
+      <div class="plan-item"><img class="who" src="sho.png" alt="SHOのイラスト" width="416" height="530" loading="lazy" style="width:65.1%">
+      <div class="plan sho"><p class="label" lang="en">SHO</p><p class="kw">伝える、話す、外に出す</p><p class="body">頭の中にあるものを、出し惜しみせず外へ。<br>２０２７年は「出す人」になります。<br>わくわくお兄さん、本格始動です。</p></div></div>
+      <div class="plan-item"><img class="who" src="kei.png" alt="KEIのイラスト" width="486" height="516" loading="lazy" style="width:76%">
+      <div class="plan kei"><p class="label" lang="en">KEI</p><p class="kw">捉える、形にする、表現する</p><p class="body">ひらめきをかたちにする。<br>小さく作って、どんどん出す。<br>２０２７年は「表現する人」として過ごします。</p></div></div>
     </div>
     <p class="ask">さあ、あなたの<br>２０２７年の作戦は？</p>
     <div class="cta-area"><a class="btn" href="#flow">この２人と、作戦会議をする <span class="arr">→</span></a></div>
