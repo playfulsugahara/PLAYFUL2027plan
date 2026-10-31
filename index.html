@@ -252,6 +252,12 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
 /* ===== 下部固定ボタン（スマホ） ===== */
 .sticky-cta{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(50,50,50,.94);display:flex;justify-content:center;transform:translateY(110%);transition:transform .25s;z-index:10}
 .sticky-cta.show{transform:none}
+/* ===== TOPに戻る（右上） ===== */
+.to-top{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:11;width:52px;height:52px;border-radius:50%;background:var(--ink);color:var(--lime);display:grid;place-items:center;align-content:center;gap:0;text-decoration:none;font-family:var(--f-mono);font-size:11px;font-weight:700;letter-spacing:.08em;line-height:1;box-shadow:3px 3px 0 var(--red);opacity:0;transform:translateY(-8px);pointer-events:none;transition:opacity .2s,transform .2s}
+.to-top .up{font-size:16px;line-height:1;margin-bottom:2px}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.to-top:hover{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--red)}
+.to-top:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
 .sticky-cta .btn{font-size:16px;padding:12px 32px;box-shadow:none;width:100%;max-width:420px}
 @media (min-width:760px){
   section{padding-block:96px}
@@ -569,6 +575,7 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
 
 <footer><span class="brand">PLAYFUL</span>Habit Community Special Project</footer>
 
+<a class="to-top" id="toTop" href="#top" aria-label="ページの先頭に戻る"><span class="up" aria-hidden="true">↑</span>TOP</a>
 <div class="sticky-cta" id="sticky"><a class="btn" href="#apply">参加する <span class="arr">→</span></a></div>
 
 <script>
@@ -583,6 +590,7 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
     });
   });
   var sticky=document.getElementById('sticky');
+  var toTop=document.getElementById('toTop');
   var fv=document.querySelector('.fv');
   var apply=document.getElementById('apply');
   function onScroll(){
@@ -590,6 +598,7 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
     var r=apply.getBoundingClientRect();
     var atEnd=r.top<window.innerHeight&&r.bottom>0;
     sticky.classList.toggle('show',past&&!atEnd);
+    toTop.classList.toggle('show',past);
   }
   window.addEventListener('scroll',onScroll,{passive:true});
   onScroll();
