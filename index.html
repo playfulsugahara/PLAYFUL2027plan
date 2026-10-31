@@ -169,10 +169,9 @@ strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,
 /* ===== 2人の作戦 ===== */
 .plans{background:var(--paper);padding-top:0}
 .plan-item{display:flex;flex-direction:column;min-width:0}
-.who-box{aspect-ratio:100/80;display:flex;justify-content:center;align-items:flex-end;margin-bottom:-44px;position:relative;z-index:1;pointer-events:none} /* 2人とも同じ高さの枠に下揃え。カードに44px食い込ませる */
+.who-box{height:clamp(220px,62vw,280px);display:flex;justify-content:center;align-items:flex-end;margin-bottom:-44px;position:relative;z-index:1;pointer-events:none} /* 2人とも同じ高さの枠に下揃え（高さで大きさを決める）。カードに44px食い込ませる */
 .who-box .who{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom}
-.plan-item .plan{flex:1} /* 横並びのとき、カードの高さをそろえる */
-.plan-grid{margin-top:32px;align-items:stretch;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.plan-grid{margin-top:32px;display:grid;grid-template-columns:1fr;gap:40px} /* 横に並べず、SHO→KEIの順に縦につなぐ（10/31） */
 .plan{border-radius:14px;padding:calc(22px + 44px) 22px 22px;color:var(--paper);min-width:0} /* 上はイラストの食い込み分（.plan-item .who の -44px）を足す */
 .plan.sho{background:var(--blue)}
 .plan.kei{background:var(--green)}
