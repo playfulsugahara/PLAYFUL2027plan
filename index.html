@@ -110,6 +110,8 @@ strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,
 .chips li:nth-child(3n){background:var(--mustard)}
 .happened .note{margin-top:24px;font-size:14px;color:var(--shadow)}
 .happened .note a{color:var(--lime)}
+.pair{margin-top:28px;display:flex;justify-content:center;align-items:flex-end;gap:12px}
+.pair img{height:clamp(170px,46vw,240px);width:auto;max-width:48%;object-fit:contain;min-width:0} /* 2人の背丈をそろえる */
 
 /* ===== それでも ===== */
 .still{background:var(--paper)}
@@ -155,10 +157,12 @@ strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,
 
 /* ===== 声 ===== */
 .voice{background:var(--lime)}
-.voice-list{margin-top:32px;display:grid;gap:20px}
+.voice-list{margin-top:32px;display:grid;gap:14px}
 .v{display:grid;gap:6px;margin:0}
-.v figcaption{font-size:13px;color:var(--muted);text-align:right;padding-right:6px}
-.v blockquote{margin:0;background:var(--paper);border-radius:4px 18px 18px 18px;padding:16px 20px;font-size:15px;line-height:1.85;box-shadow:3px 3px 0 var(--shadow)}
+/* アイコンをコメントの右下の角に少し重ねる */
+.v figcaption{justify-self:end;margin:-30px -6px 0 0;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:12px;color:var(--muted);position:relative;z-index:1}
+.v .ic{width:64px;height:64px;border-radius:50%;background:var(--paper);box-shadow:0 0 0 3px var(--lime),2px 2px 0 3px var(--shadow)}
+.v blockquote{margin:0;background:var(--paper);border-radius:4px 18px 18px 18px;padding:16px 20px 30px;font-size:15px;line-height:1.85;box-shadow:3px 3px 0 var(--shadow)}
 .v blockquote p+p{margin-top:6px}
 .voice .close{margin-top:48px;text-align:center;padding:28px 8px;border-top:2px dashed var(--ink)}
 .voice .close .head{font-family:var(--f-display);font-weight:var(--w-display);font-size:19px;line-height:1.7;margin-bottom:16px}
@@ -321,6 +325,7 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
       <li>売上や数字に、気持ちが振り回されなくなった</li>
     </ul>
     <p class="note">詳しくは、<a href="#voice">メンバーの声</a>で。</p>
+    <div class="pair"><img src="x2.png" alt="" width="314" height="509" loading="lazy"><img src="x7.png" alt="" width="396" height="520" loading="lazy"></div>
   </div>
 </section>
 
@@ -413,14 +418,14 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
     <span class="script">Voices</span>
     <h2>メンバーの声</h2>
     <div class="voice-list">
-      <figure class="v"><blockquote><p>「この先どうなるか分からない不安がとても大きくて（…）本当に最近やっと…私はこの仕事でずっと過ごすイメージが湧いてきた」</p></blockquote><figcaption>１期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「自分を取り戻していけるホームだなと感じてます」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「正直、習慣化でここまで余白が出来て（…）物事がいい方向に進んで行くとは思ってなくて！ 今、ただただビックリしてます」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「変わってきた実感があります。自分を責めなくなった！！」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「このコミュニティがあって他の方の気付きや習慣化する工夫などを目にすることができることがありがたいです」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「頑張らなくていい！ 一回でもできたらオッケーで続けられてます！」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>「『生きているだけで１００点満点』という安心基地をこの場所で仲間と共有できたことが、何より幸せ」</p></blockquote><figcaption>０期メンバー</figcaption></figure>
-      <figure class="v"><blockquote><p>いつも月末になると売上を見て落ち込んでいたのが、暇そうだなと思っててもポンって予約が入る。気づけば先月は凹んでいなかった</p></blockquote><figcaption>１期メンバー</figcaption></figure>
+      <figure class="v"><blockquote><p>「この先どうなるか分からない不安がとても大きくて（…）本当に最近やっと…私はこの仕事でずっと過ごすイメージが湧いてきた」</p></blockquote><figcaption><img class="ic" src="m5.png" alt="" width="160" height="160" loading="lazy"><span>１期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「自分を取り戻していけるホームだなと感じてます」</p></blockquote><figcaption><img class="ic" src="m1.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「正直、習慣化でここまで余白が出来て（…）物事がいい方向に進んで行くとは思ってなくて！ 今、ただただビックリしてます」</p></blockquote><figcaption><img class="ic" src="m3.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「変わってきた実感があります。自分を責めなくなった！！」</p></blockquote><figcaption><img class="ic" src="m6.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「このコミュニティがあって他の方の気付きや習慣化する工夫などを目にすることができることがありがたいです」</p></blockquote><figcaption><img class="ic" src="m10.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「頑張らなくていい！ 一回でもできたらオッケーで続けられてます！」</p></blockquote><figcaption><img class="ic" src="m8.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>「『生きているだけで１００点満点』という安心基地をこの場所で仲間と共有できたことが、何より幸せ」</p></blockquote><figcaption><img class="ic" src="m9.png" alt="" width="160" height="160" loading="lazy"><span>０期メンバー</span></figcaption></figure>
+      <figure class="v"><blockquote><p>いつも月末になると売上を見て落ち込んでいたのが、暇そうだなと思っててもポンって予約が入る。気づけば先月は凹んでいなかった</p></blockquote><figcaption><img class="ic" src="m3.png" alt="" width="160" height="160" loading="lazy"><span>１期メンバー</span></figcaption></figure>
     </div>
     <div class="close">
       <p class="head">小さい変化に気付けない人は、<br>大きい変化の波に上手に乗れません。</p>
