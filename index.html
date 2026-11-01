@@ -206,6 +206,18 @@ td.yen{text-align:right;white-space:nowrap;font-family:var(--f-mono);font-weight
 tbody th{font-weight:var(--w-mid)}
 tr.hl th{color:var(--red)}
 tr.hl td.yen.total{color:var(--red)}
+/* スマホ：料金表を「区分ごとのカード」に組み替える（区分名を見出しに、金額を1行ずつ） */
+@media (max-width:600px){
+  .price thead{display:none}
+  .price,.price tbody,.price tr,.price th,.price td{display:block;width:100%}
+  .price tr{padding:14px 16px 10px;border-bottom:1px solid var(--shadow)}
+  .price tr:last-child{border-bottom:0}
+  .price tbody th{padding:0 0 8px;border:0;font-size:16px;font-weight:var(--w-strong);line-height:1.5}
+  .price tbody th br{display:none}
+  .price td{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:6px 0;border:0;border-top:1px dashed var(--shadow);text-align:right}
+  .price td::before{content:attr(data-label);font-family:var(--f-body);font-weight:var(--w-body);font-size:13px;color:var(--muted);text-align:left}
+  .price td.total{font-size:17px}
+}
 .notes{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:6px;font-size:14px}
 .notes li{padding-left:1.2em;text-indent:-1.2em}
 .notes li::before{content:"・"}
@@ -478,11 +490,11 @@ footer .brand{font-family:var(--f-display);font-weight:var(--w-display);color:va
       <span class="script">Price</span>
       <h2>料金</h2>
       <div class="tbl-wrap">
-        <table>
+        <table class="price">
           <thead><tr><th></th><th>参加料<br>（約２ヶ月）</th><th>入会金</th><th>お支払い</th></tr></thead>
           <tbody>
-            <tr class="hl"><th>０期・１期メンバー<br>（５月〜１０月）</th><td class="yen">¥8,800</td><td class="yen">なし</td><td class="yen total">税込8,800円</td></tr>
-            <tr><th>はじめての方</th><td class="yen">¥8,800</td><td class="yen">¥11,000</td><td class="yen total">税込19,800円</td></tr>
+            <tr class="hl"><th>０期・１期メンバー<br>（５月〜１０月）</th><td class="yen" data-label="参加料（約２ヶ月）">¥8,800</td><td class="yen" data-label="入会金">なし</td><td class="yen total" data-label="お支払い">税込8,800円</td></tr>
+            <tr><th>はじめての方</th><td class="yen" data-label="参加料（約２ヶ月）">¥8,800</td><td class="yen" data-label="入会金">¥11,000</td><td class="yen total" data-label="お支払い">税込19,800円</td></tr>
           </tbody>
         </table>
       </div>
