@@ -163,6 +163,14 @@ strong,b{font-weight:var(--w-strong);background:linear-gradient(transparent 62%,
 .v .ic{position:absolute;right:0;bottom:0;width:96px;height:96px;border-radius:50%;background:var(--paper);box-shadow:0 0 0 3px var(--lime),2px 2px 0 3px var(--shadow);z-index:1}
 .v blockquote{margin:0;background:var(--paper);border-radius:4px 18px 18px 18px;padding:16px 4em 22px 20px;font-size:15px;line-height:1.85;box-shadow:3px 3px 0 var(--shadow)}
 .v blockquote p+p{margin-top:6px}
+/* スマホ：左右の背景余白を詰めてカードを広げる。アイコンは右下へ少し外にはみ出させ、カードへの食い込みを抑える */
+@media (max-width:600px){
+  .voice .wrap{padding-inline:16px}
+  .voice-list{gap:6px}
+  .v{padding:0 12px 34px 0}
+  .v .ic{right:-4px}
+  .v blockquote{padding:16px 4.6em 20px 16px}
+}
 .voice .close{margin-top:48px;text-align:center;padding:28px 8px;border-top:2px dashed var(--ink)}
 .voice .close .head{font-family:var(--f-display);font-weight:var(--w-display);font-size:19px;line-height:1.7;margin-bottom:16px}
 
